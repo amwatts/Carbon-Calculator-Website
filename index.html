@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<link rel='shortcut icon' href='Images/favicon.png' type='image/x-icon'/ >
+
+<title>Green Footprint</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="javascript.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="Images/footprintlogo.png" width="30" />
+      <a class="navbar-brand" href="index.html">Carbon Calculator</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="tips.html">Tips<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="numbers.html">Numbers</a></li>
+        <li><a href="recyclables.html">Recyclables</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br />
+<h1>Calculate Your Daily Carbon Footprint</h1>
+
+<div class="calc">
+<br />
+<form name="form1">
+
+
+ <h2>Transportation</h2>
+  <p>How did you travel today?</p>  
+  
+  <label class="checkbox-inline"> 
+      	<input type="checkbox" id="inlineCheckbox1" value="option1"> Car 
+      </label>
+      
+      <label class="checkbox-inline"> 
+      	<input type="checkbox" id="inlineCheckbox2" value="option2"> Motorcycle 
+      </label>
+      
+      <label class="checkbox-inline"> 
+      	<input type="checkbox" id="inlineCheckbox3" value="option3"> Train 
+      </label>
+      
+      <label class="checkbox-inline"> 
+      	<input type="checkbox" id="inlineCheckbox4" value="option4"> Walk/Bike 
+      </label>   
+      
+      
+  <!--should not be displayed until appropriate checkbox is checked -->     
+      <br /><br />
+    <div class="form-group">
+    	<label for="carInput2" class="col-sm-2 control-label">Car Miles Driven</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" id="carInput2" placeholder="0">
+    	</div> </div>
+   <br /> 
+  
+    <label for="motoInput2" class="col-sm-2 control-label">Motorcycle Miles Driven</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" id="motoInput2" placeholder="0">
+   </div> <br /><br />
+   
+   
+    <label for="trainInput2" class="col-sm-2 control-label">Minutes on Train</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" id="trainInput2" placeholder="0">
+    </div> <br /><br />
+    
+    <label for="noneInput2" class="col-sm-2 control-label">Walk/Biked Miles</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" id="noneInput2" placeholder="0">
+    </div> <br /><br />
+      
+      
+<h2>Purchases</h2>
+   <p>What did you buy today?</p>
+   
+     <div class="form-group">
+     
+    <label for="calcPurchasePlastic" class="col-sm-2 control-label">Plastic bottles: </label>
+    <div class="col-sm-3">
+      	<input type="number" class="form-control" name="calcPurchasePlastic" id="calcPurchasePlastic" value="0"> 
+   </div> <br /><br />
+   
+    <label for="calcPurchaseCans" class="col-sm-2 control-label">Aluminum cans:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcPurchaseCans" id="calcPurchaseCans" value="0"> 
+   </div> <br /><br /> 
+   
+     
+    <label for="calcPurchaseGlass" class="col-sm-2 control-label">Glass Bottle:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcPurchaseGlass" id="calcPurchaseGlass" value="0"> 
+   </div> <br /><br /> 
+     
+     <label for="calcPurchaseBeef" class="col-sm-2 control-label">Pounds of Beef:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcPurchaseBeef" id="calcPurchaseBeef" value="0"> 
+   </div> <br /><br /> 
+   
+      <label for="calcPurchasePork" class="col-sm-2 control-label">Pounds of Pork:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcPurchasePork" id="calcPurchasePork" value="0"> 
+   </div> <br /><br /> 
+     
+    <label for="calcPurchaseOtherMeat" class="col-sm-2 control-label">Pounds of Chicken/Fish:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcPurchaseOtherMeat" id="calcPurchaseOtherMeat" value="0"> 
+   </div></div> <br /><br />   
+    
+  
+  
+
+<h2>Recycling</h2>
+	<p>What did you recycle today?</p>
+  
+<div class="form-group">
+  
+    <label for="calcRecyPlatic" class="col-sm-2 control-label">Plastic Bottles:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcRecyPlastic" id="calcRecyPlastic" value="0"> 
+   </div> <br /><br /> 
+    
+    <label for="RecyCans" class="col-sm-2 control-label">Aluminum Cans:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcRecyCans" id="calcRecyCans" value="0"> 
+   </div> <br /><br />   
+    
+    <label for="RecyGlass" class="col-sm-2 control-label">Glass Bottles:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcRecyGlass" id="calcRecyGlass" value="0"> 
+   </div> <br /><br />  
+
+    <label for="RecyBoxes" class="col-sm-2 control-label">Cardboard Boxes:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcRecyBoxes" id="calcRecyBoxes" value="0"> 
+   </div> <br /><br />  
+     
+    <label for="RecyPapers" class="col-sm-2 control-label">Magazines/Newspapers:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcRecyPapers" id="calcRecyPapers" value="0"> 
+   </div> <br /><br />  
+      
+      <label for="RecyElect" class="col-sm-2 control-label">Electronics:</label>
+    	<div class="col-sm-3">
+      		<input type="number" class="form-control" name="calcRecyElect" id="calcRecyElect" value="0"> 
+   </div></div> <br /><br />  
+     
+      
+	</form>
+  <br /><br />
+  <button id="BUTTONID" class="btn btn-success" onclick="calcResults()">Calculate</button>
+  
+</div>
+
+
+
+<div class="calcResults">
+  <h2><span>Results</span></h2>
+  <h2>Your carbon footprint for today was: </h2>
+  <p id="calcResults"></p>
+</div>
+
+
+
+
+<footer>
+<p>Here at Watts&Co. we believe the more you know, the smaller your footprint</p>
+<p>So take the time each day to calculate how much carbon dioxide you are producing and emitting into the Earth</p>
+<p>Also, use the Android mobile app!</p>
+</footer>
+
+<script>
+function calcResults() {  
+	var pBottle = document.forms["form1"]["calcPurchasePlastic"].value;
+	var aCan = document.forms["form1"]["calcPurchaseCans"].value;
+	var gBottle = document.forms["form1"]["calcPurchaseGlass"].value;
+	var lbBeef = document.forms["form1"]["calcPurchaseBeef"].value;
+	var lbPork = document.forms["form1"]["calcPurchasePork"].value;
+	var lbOtherMeat = document.forms["form1"]["calcPurchaseOtherMeat"].value;
+	var recyPBottle = document.forms["form1"]["calcRecyPlastic"].value;
+	var recyACans = document.forms["form1"]["calcRecyCans"].value;
+	var recyGBottle = document.forms["form1"]["calcRecyGlass"].value;
+	var recyBoxes = document.forms["form1"]["calcRecyBoxes"].value;
+	var recyPapers = document.forms["form1"]["calcRecyPapers"].value;
+	var recyElect = document.forms["form1"]["calcRecyElect"].value;
+	
+	var totalProduced = pBottle*2.3 + aCan*0.28 + gBottle*0.38 + lbBeef*8.0 + lbPork*6.0 +
+	lbOtherMeat*2.0; 
+	var totalSaved = recyPBottle*0.15 + recyACans*0.28 + recyGBottle*0.38 + recyBoxes*0.04 + recyPapers*0.11 + recyElect*28;
+	var totalDiff = totalProduced - totalSaved;
+	
+	document.getElementById("calcResults").innerHTML = totalDiff + " lb CO2";
+	};
+	
+function mouseOver() {
+	var pBottle = document.forms["form1"]["calcPurchasePlastic"].value;
+	document.getElementById("calcResults").innerHTML = pBottle;
+};
+
+</script>
+
+</body>
+</html>

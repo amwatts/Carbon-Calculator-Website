@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<link rel='shortcut icon' href='Images/favicon.png' type='image/x-icon'/ >
+<title>Green Footprint</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="Images/footprintlogo.png" width="30" />
+      <a class="navbar-brand" href="index.html">Carbon Calculator</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="tips.html">Tips<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="facts.html">Facts</a></li>
+        <li><a href="numbers.html">Numbers</a></li>
+        <li class="active"><a href="recyclables.html">Recyclables</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+
+<h1>What can you recycle?</h1>
+<h2 id="center">And what can you not?</h2>
+<img style="text-align:center" src="Images/recy_logo.jpg" height="100"/>
+<p id="center"><span id="green">Recyclable</span> <span id="red">Non-Recyclable</span> <span id="yellow">Depends on location</span></p>
+  
+  <ul class="collapsibleList">
+ <li>
+  <label for="mylist-node1">Aluminum</label>
+  <input type="checkbox" id="mylist-node1" />
+  <ul>
+   <li>Aluminum can</li>
+   <li>Aluminum foil</li>
+   <li>Steel/tin can</li>
+   <li id="red">Metal lids</li>
+  </ul>
+ </li>
+ 
+ <li>
+  <label for="mylist-node2">Paper</label>
+  <input type="checkbox" id="mylist-node2" />
+  <ul>
+   <li>Mixed papers</li>
+   <li>Newspaper</li>
+   <li>Corrugated cardboard</li>
+   <li>Cardboard cartons</li>
+   <li>Paperboard</li>
+   <li>Office Paper</li>
+   <li>Phone book</li>
+   <li>Magazines</li>
+  </ul>
+  </li>
+  
+  <li>
+  <label for="mylist-node3">Plastic</label>
+  <input type="checkbox" id="mylist-node3" />
+  <ul>
+   <li id="yellow">Plasic bag*</li>
+   <li>Plastic bottle</li>
+   <li>Plastic caps</li>
+   <li>Plastic jars</li>
+   <li>Plastic jugs</li>
+   <li id="yellow">Styrofoam</li>
+  </ul>
+  </li>
+  
+  <li>
+  <label for="mylist-node4">Glass</label>
+  <input type="checkbox" id="mylist-node4" />
+  <ul>
+   <li>Clean flint glass</li>
+   <li>Brown amber glass</li>
+   <li>Green emerald glass</li>
+   <li id="red">Mixed-color glass</li>
+   <li id="red">Heat resistant glass</li>
+   <li id="red">Mirror glass</li>
+   <li id="red">Ceramics</li>
+   <li id="red">Window glass</li>
+   <li id="red">Crystals</li>
+  </ul>
+  </li>
+  
+  <li>
+  <label for="mylist-node5">Light Bulbs</label>
+  <input type="checkbox" id="mylist-node5" />
+  <ul>
+   <li>LED light bulb</li>
+   <li>CFL light bulb</li>
+   <li id="red">Incandescent light bulb</li>
+  </ul>
+  </li>
+  
+  <li>
+  <label for="mylist-node6">Batteries</label>
+  <input type="checkbox" id="mylist-node6" />
+  <ul>
+   <li>Household battery</li>
+   <li>Button battery</li>
+   <li>Car battery</li>
+  </ul>
+  </li>
+  
+  <li>
+  <label for="mylist-node7">Electronics</label>
+  <input type="checkbox" id="mylist-node7" />
+  <ul>
+   <li>Landline phone</li>
+   <li>Cell phone</li>
+   <li>CPU</li>
+   <li>Monitor</li>
+   <li>Printer</li>
+   <li>Keyboard</li>
+   <li>Laptop</li>
+   <li>Television</li>
+   <li>Calculator</li>
+   <li>Photocopier</li>
+   <li>Cordless tool</li>
+   <li>Corded tool</li>
+   <li id="red">Microwave</li>
+   <li id="red">Fridge</li>
+   <li id="red">Fire/Smoke detector</li>
+   <li>Digital clock</li>
+   <li>Stereo</li>
+   <li id="red">Thermometer</li>
+  </ul>
+  </li>
+  
+</div>
+
+
+<footer>
+<p>Here at Watts&Co. we believe the more you know, the smaller your footprint</p>
+<p>So take the time each day to calculate how much carbon dioxide you are producing and emitting into the Earth</p>
+<p>Also, use the Android mobile app!</p>
+</footer>
+</body>
+</html>
